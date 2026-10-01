@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>KANI MARK Checkout</title><link rel="stylesheet" href="css/style.css"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#3F5B32"><link rel="apple-touch-icon" href="/icons/icon-192.png"><script>if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js"))</script></head>
+<body>
+<div class="invocation"><span lang="ta">ஸ்ரீ சங்கர விநாயகர் துணை</span></div>
+<header class="nav"><a class="logo" href="/">KANI <span>MARK</span><small>OIL MILL</small></a><nav class="links always"><a href="/">← Back Home</a></nav></header>
+<section class="section">
+<p class="eyebrow">SECURE CHECKOUT</p><h2>Complete your order.</h2>
+<div class="contact-card checkout">
+  <div id="testbanner" class="testbanner" hidden>TEST MODE — no real money is charged. Card 4111 1111 1111 1111, any future expiry, any CVV. UPI: success@razorpay</div>
+  <div id="summary"></div>
+  <div id="form" hidden>
+    <label>Quantity (1 L each)<select id="qty"></select></label>
+    <label>Name<input id="name" autocomplete="name"></label>
+    <label>Email<input id="email" type="email" autocomplete="email"></label>
+    <label>Mobile<input id="mobile" type="tel" autocomplete="tel" placeholder="10-digit number"></label>
+    <label>Delivery address<textarea id="address" rows="3" autocomplete="street-address"></textarea></label>
+    <button id="payBtn" class="paybtn" onclick="pay()">Pay with Razorpay</button>
+  </div>
+  <p id="status" role="status"></p>
+</div></section>
+<div class="copyright"><div class="line"></div>© 2026 <b class="zenix"><i class="c1">Z</i><i class="c2">E</i><i class="c3">N</i><i class="c4">I</i><i class="c5">X</i></b></div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="js/checkout.js"></script>
+</body></html>
